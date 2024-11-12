@@ -37,7 +37,7 @@
             <mxPoint x="450" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EW5klG_tuBU2T9md3882-9" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Send message to PS&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EW5klG_tuBU2T9md3882-9" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Send message to student&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="225" y="180" width="95" height="50" as="geometry" />
         </mxCell>
         <mxCell id="EW5klG_tuBU2T9md3882-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EW5klG_tuBU2T9md3882-2" target="EW5klG_tuBU2T9md3882-9">
@@ -52,7 +52,7 @@
             <mxPoint x="228" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EW5klG_tuBU2T9md3882-12" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Re-assign student to different PS&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EW5klG_tuBU2T9md3882-12" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;Send message to PS&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="225" y="250" width="95" height="50" as="geometry" />
         </mxCell>
         <mxCell id="EW5klG_tuBU2T9md3882-13" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EW5klG_tuBU2T9md3882-2" target="EW5klG_tuBU2T9md3882-14">
@@ -61,8 +61,26 @@
             <mxPoint x="228" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EW5klG_tuBU2T9md3882-14" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Check inbox&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="EW5klG_tuBU2T9md3882-14" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;Re-assign student to different PS&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="225" y="320" width="95" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EW5klG_tuBU2T9md3882-17" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="EW5klG_tuBU2T9md3882-18" source="EW5klG_tuBU2T9md3882-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="320" as="sourcePoint" />
+            <mxPoint x="228" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EW5klG_tuBU2T9md3882-18" value="Check inbox" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="390" width="95" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EW5klG_tuBU2T9md3882-20" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;View Status of student supervision&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="325" y="215" width="95" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EW5klG_tuBU2T9md3882-21" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="EW5klG_tuBU2T9md3882-20" source="EW5klG_tuBU2T9md3882-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="285" as="sourcePoint" />
+            <mxPoint x="550" y="285" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
