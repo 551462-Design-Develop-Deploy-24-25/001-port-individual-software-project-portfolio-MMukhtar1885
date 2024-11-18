@@ -36,6 +36,33 @@
         <mxCell id="ykxl8MRSU-tnWzsCg_Ww-5" value="Re-enter Credentials" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="340" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="ykxl8MRSU-tnWzsCg_Ww-11" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="ykxl8MRSU-tnWzsCg_Ww-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="340" as="targetPoint" />
+            <mxPoint x="405" y="270" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ykxl8MRSU-tnWzsCg_Ww-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ykxl8MRSU-tnWzsCg_Ww-12" target="ykxl8MRSU-tnWzsCg_Ww-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ykxl8MRSU-tnWzsCg_Ww-12" value="Navigate to &#39;Inbox&#39; Page" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="328.75" y="340" width="152.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ykxl8MRSU-tnWzsCg_Ww-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ykxl8MRSU-tnWzsCg_Ww-13" target="ykxl8MRSU-tnWzsCg_Ww-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ykxl8MRSU-tnWzsCg_Ww-13" value="Display List of Received Messages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="328.75" y="450" width="152.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ykxl8MRSU-tnWzsCg_Ww-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ykxl8MRSU-tnWzsCg_Ww-15" target="ykxl8MRSU-tnWzsCg_Ww-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ykxl8MRSU-tnWzsCg_Ww-15" value="Reply to Messages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="328.75" y="560" width="152.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ykxl8MRSU-tnWzsCg_Ww-17" value="" style="ellipse;html=1;shape=endState;fillColor=#FF3333;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="390" y="670" width="30" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
