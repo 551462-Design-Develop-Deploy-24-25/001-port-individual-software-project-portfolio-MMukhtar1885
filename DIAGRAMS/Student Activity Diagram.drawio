@@ -1,17 +1,86 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
   <diagram name="Page-1" id="Zv39QfKeAGgpEDCP1mTJ">
-    <mxGraphModel dx="1194" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1194" dy="1635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-8" target="OgLMr1-iJ8K-j_Pl5qPv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-1" target="OgLMr1-iJ8K-j_Pl5qPv-5">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-8" value="" style="ellipse;html=1;shape=startState;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="380.25" y="-1050" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="410" y="30" width="30" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-11" target="OgLMr1-iJ8K-j_Pl5qPv-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-5" value="frqewafragqrefa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="365" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-11" value="Student Logs in with personal credientials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="338.25" y="-990" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-13" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Credentials Verified?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="336.25" y="-920" width="117.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-17" value="No" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-13" target="OgLMr1-iJ8K-j_Pl5qPv-18">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="-860" as="sourcePoint" />
+            <mxPoint x="470" y="-850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-18" value="Student Re-enters Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-915" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-19" value="Yes" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.934;exitY=0.53;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-13" target="OgLMr1-iJ8K-j_Pl5qPv-20">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="551" y="-895.5" as="sourcePoint" />
+            <mxPoint x="450" y="-895.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-20" value="Student Re-enters Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-915" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-35" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=strokeColor;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="401.5" y="-1118.75" width="5" height="577.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="-730" as="sourcePoint" />
+            <mxPoint x="618" y="-830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.853;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="-730" as="sourcePoint" />
+            <mxPoint x="200" y="-770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-39" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.853;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400.5" y="-830" as="sourcePoint" />
+            <mxPoint x="400.5" y="-773" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.853;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="617" y="-830" as="sourcePoint" />
+            <mxPoint x="617" y="-773" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-41" value="Student Re-enters Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-770" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-42" value="Student Re-enters Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="346.5" y="-770" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-43" value="Student Re-enters Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="-770" width="115" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
