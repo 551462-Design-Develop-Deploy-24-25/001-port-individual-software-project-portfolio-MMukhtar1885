@@ -7,20 +7,11 @@
         <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-8" target="OgLMr1-iJ8K-j_Pl5qPv-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-1" target="OgLMr1-iJ8K-j_Pl5qPv-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-8" value="" style="ellipse;html=1;shape=startState;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="380.25" y="-1050" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="410" y="30" width="30" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OgLMr1-iJ8K-j_Pl5qPv-11" target="OgLMr1-iJ8K-j_Pl5qPv-13">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-5" value="frqewafragqrefa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="365" y="90" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-11" value="Student Logs in with personal credientials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="338.25" y="-990" width="115" height="40" as="geometry" />
