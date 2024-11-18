@@ -44,8 +44,26 @@
             <mxPoint x="492.5" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hT2Q-yJEOAckeOupxTLc-21" value="Logs in with credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
-          <mxGeometry x="317.5" y="340" width="175" height="60" as="geometry" />
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hT2Q-yJEOAckeOupxTLc-21" target="hT2Q-yJEOAckeOupxTLc-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-21" value="Navigate to &#39;Meeting Schedueler&#39; Page" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="328.75" y="340" width="152.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hT2Q-yJEOAckeOupxTLc-23" target="hT2Q-yJEOAckeOupxTLc-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-23" value="Select date and time" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="328.75" y="450" width="152.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hT2Q-yJEOAckeOupxTLc-25" target="hT2Q-yJEOAckeOupxTLc-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-25" value="Confirm meeting request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="328.75" y="550" width="152.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-27" value="Confirm meeting request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="328.75" y="650" width="152.5" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
