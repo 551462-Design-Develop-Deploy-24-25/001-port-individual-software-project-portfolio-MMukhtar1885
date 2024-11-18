@@ -1,9 +1,87 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
   <diagram name="Page-1" id="lkc6xWLlDGLeA_boxeG3">
-    <mxGraphModel>
+    <mxGraphModel dx="1194" dy="1635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KtjRtsT-9GSR3H8rWnFz-1" target="KtjRtsT-9GSR3H8rWnFz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-1" value="" style="ellipse;html=1;shape=startState;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="380.25" y="-1050" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KtjRtsT-9GSR3H8rWnFz-2" target="KtjRtsT-9GSR3H8rWnFz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-2" value="PS Logs in with personal credientials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="338.25" y="-990" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-3" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Credentials Verified?&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="336.25" y="-920" width="117.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-4" value="No" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="KtjRtsT-9GSR3H8rWnFz-3" target="KtjRtsT-9GSR3H8rWnFz-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="-860" as="sourcePoint" />
+            <mxPoint x="470" y="-850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-5" value="PS Re-enters Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="120" y="-915" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-6" value="Yes" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.934;exitY=0.53;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="KtjRtsT-9GSR3H8rWnFz-3" target="KtjRtsT-9GSR3H8rWnFz-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="551" y="-895.5" as="sourcePoint" />
+            <mxPoint x="450" y="-895.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-7" value="Proceeds to application" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-915" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=strokeColor;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="397.13" y="-1114.37" width="5" height="568.75" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="KtjRtsT-9GSR3H8rWnFz-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="-730" as="sourcePoint" />
+            <mxPoint x="618" y="-830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-13" value="Sends Message to student" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="140" y="-780" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.499;exitY=0.856;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="KtjRtsT-9GSR3H8rWnFz-8" target="KtjRtsT-9GSR3H8rWnFz-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="-750" as="sourcePoint" />
+            <mxPoint x="450" y="-800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-15" value="Sends message to ST" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="280" y="-780" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.499;exitY=0.856;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="KtjRtsT-9GSR3H8rWnFz-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="337" y="-830" as="sourcePoint" />
+            <mxPoint x="338" y="-780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-18" value="Checks Inbox" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="420" y="-780" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.499;exitY=0.856;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="KtjRtsT-9GSR3H8rWnFz-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="477" y="-830" as="sourcePoint" />
+            <mxPoint x="478" y="-780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-20" value="Books meetings with Student" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-780" width="115" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="KtjRtsT-9GSR3H8rWnFz-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.499;exitY=0.856;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="KtjRtsT-9GSR3H8rWnFz-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="617" y="-830" as="sourcePoint" />
+            <mxPoint x="618" y="-780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
