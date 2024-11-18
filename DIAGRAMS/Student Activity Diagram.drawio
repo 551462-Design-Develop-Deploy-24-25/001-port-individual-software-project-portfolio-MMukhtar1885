@@ -34,7 +34,7 @@
             <mxPoint x="450" y="-895.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-20" value="Student Re-enters Credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" parent="1" vertex="1">
+        <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-20" value="Proceed to application&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" parent="1" vertex="1">
           <mxGeometry x="560" y="-915" width="115" height="40" as="geometry" />
         </mxCell>
         <mxCell id="OgLMr1-iJ8K-j_Pl5qPv-35" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;fillColor=strokeColor;rotation=90;" parent="1" vertex="1">
