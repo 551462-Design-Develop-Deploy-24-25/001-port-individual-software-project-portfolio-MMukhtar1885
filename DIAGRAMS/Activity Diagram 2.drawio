@@ -62,8 +62,14 @@
         <mxCell id="hT2Q-yJEOAckeOupxTLc-25" value="Confirm meeting request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="328.75" y="550" width="152.5" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hT2Q-yJEOAckeOupxTLc-27" target="hT2Q-yJEOAckeOupxTLc-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="hT2Q-yJEOAckeOupxTLc-27" value="Confirm meeting request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
           <mxGeometry x="328.75" y="650" width="152.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hT2Q-yJEOAckeOupxTLc-29" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="390" y="750" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
