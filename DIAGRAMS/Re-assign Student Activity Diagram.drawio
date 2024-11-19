@@ -1,9 +1,51 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.6">
   <diagram name="Page-1" id="SET_Mms1V3OX7Fo0Ke8Q">
-    <mxGraphModel>
+    <mxGraphModel dx="1194" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="9gnl4u9sy6Hs6nhb9GRW-11" target="9gnl4u9sy6Hs6nhb9GRW-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="60" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-2" value="Logs in with credentials" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="317.5" y="100" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="9gnl4u9sy6Hs6nhb9GRW-6" target="9gnl4u9sy6Hs6nhb9GRW-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-4" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="9gnl4u9sy6Hs6nhb9GRW-3">
+          <mxGeometry x="-0.1676" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-5" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9gnl4u9sy6Hs6nhb9GRW-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-6" value="Credentials Verified?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="190" width="145" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9gnl4u9sy6Hs6nhb9GRW-8" target="9gnl4u9sy6Hs6nhb9GRW-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-8" value="Display Error Message" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-9" value="Re-enter Credentials" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9gnl4u9sy6Hs6nhb9GRW-2" target="9gnl4u9sy6Hs6nhb9GRW-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="492.5" y="190" as="sourcePoint" />
+            <mxPoint x="492.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9gnl4u9sy6Hs6nhb9GRW-11" value="" style="ellipse;html=1;shape=startState;fillColor=#FF3333;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="390" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
