@@ -63,7 +63,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0ECU7l1hAycFRVOm7Qvq-43" value="SendMessage()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" edge="1" target="0ECU7l1hAycFRVOm7Qvq-42" parent="1">
+        <mxCell id="0ECU7l1hAycFRVOm7Qvq-43" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" edge="1" target="0ECU7l1hAycFRVOm7Qvq-42" parent="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="290" y="265" as="sourcePoint" />
           </mxGeometry>
