@@ -6,16 +6,15 @@ namespace GuidanceHubApp
 {
     class Program
     {
-        static Dictionary<string, List<string>> inboxes = new Dictionary<string, List<string>>
-        {
-            { "student", new List<string>() },
-            { "ps", new List<string>() },
-            { "st", new List<string>() }
-        };
-
-        static string logFilePath = "GuidanceHubLogs.txt";
-
         static void Main(string[] args)
+        {
+            Application.Start();
+        }
+    }
+
+    static class Application
+    {
+        public static void Start()
         {
             while (true)
             {
@@ -33,16 +32,16 @@ namespace GuidanceHubApp
                 switch (choice)
                 {
                     case "1":
-                        if (HandleLogin("Student", "student123@hull.ac.uk", "Password"))
-                            StudentActions();
+                        if (Authenticator.HandleLogin("Student", "student123@hull.ac.uk", "Password"))
+                            new Student().ShowMenu();
                         break;
                     case "2":
-                        if (HandleLogin("Personal Supervisor", "supervisor123@hull.ac.uk", "Password"))
-                            PersonalSupervisorActions();
+                        if (Authenticator.HandleLogin("Personal Supervisor", "supervisor123@hull.ac.uk", "Password"))
+                            new PersonalSupervisor().ShowMenu();
                         break;
                     case "3":
-                        if (HandleLogin("Senior Tutor", "seniortutor@hull.ac.uk", "Password"))
-                            SeniorTutorActions();
+                        if (Authenticator.HandleLogin("Senior Tutor", "seniortutor@hull.ac.uk", "Password"))
+                            new SeniorTutor().ShowMenu();
                         break;
                     case "4":
                         Console.WriteLine("Thank you for using GuidanceHub. Goodbye!");
@@ -55,188 +54,233 @@ namespace GuidanceHubApp
             }
         }
 
-        static bool HandleLogin(string role, string correctEmail, string correctPassword)
+        private static void Pause()
         {
-            Console.Clear();
-            Console.WriteLine($"You selected: {role}");
-            Console.Write("Enter Email: ");
-            string email = Console.ReadLine();
-
-            Console.Write("Enter Password: ");
-            string password = ReadPassword();
-
-            if (email == correctEmail && password == correctPassword)
-            {
-                Console.WriteLine($"\nLogin successful! Welcome, {role}.");
-                Pause();
-                return true;
-            }
-            else
-            {
-                Console.WriteLine("\nInvalid credentials. Login failed.");
-                Pause();
-                return false;
-            }
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
+    }
 
-        static void StudentActions()
+    static class Authenticator
+    {
+        public static bool HandleLogin(string role, string correctEmail, string correctPassword)
         {
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Student Menu:");
-                Console.WriteLine("1. Send message to PS");
-                Console.WriteLine("2. Send message to ST");
-                Console.WriteLine("3. Book a meeting with PS");
-                Console.WriteLine("4. Check Inbox");
-                Console.WriteLine("5. Log Out");
-                Console.Write("Enter your choice: ");
+                Console.WriteLine($"You selected: {role}");
+                Console.Write("Enter Email: ");
+                string email = Console.ReadLine();
 
-                string choice = Console.ReadLine();
+                Console.Write("Enter Password: ");
+                string password = Utilities.ReadPassword();
 
-                switch (choice)
+                if (email == correctEmail && password == correctPassword)
                 {
-                    case "1":
-                        SendMessage("student", "ps");
-                        break;
-                    case "2":
-                        SendMessage("student", "st");
-                        break;
-                    case "3":
-                        BookMeeting("student", "ps");
-                        break;
-                    case "4":
-                        CheckInbox("student");
-                        break;
-                    case "5":
-                        return;
-                    default:
-                        Console.WriteLine("Invalid choice. Please try again.");
-                        Pause();
-                        break;
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("\nInvalid credentials. Login failed.");
+                    Console.WriteLine("Select options:");
+                    Console.WriteLine("1- Re-enter Credentials");
+                    Console.WriteLine("2- Exit");
+                    Console.Write("Enter your choice: ");
+                    string option = Console.ReadLine();
+
+                    if (option == "2")
+                        return false;
                 }
             }
         }
+    }
 
-        static void PersonalSupervisorActions()
+    abstract class User
+    {
+        protected static Dictionary<string, List<string>> inboxes = new Dictionary<string, List<string>>
         {
-            while (true)
-            {
-                Console.Clear();
-                Console.WriteLine("Personal Supervisor Menu:");
-                Console.WriteLine("1. Send message to Student");
-                Console.WriteLine("2. Send message to ST");
-                Console.WriteLine("3. Book a meeting with Student");
-                Console.WriteLine("4. Check Inbox");
-                Console.WriteLine("5. Log Out");
-                Console.Write("Enter your choice: ");
+            { "student", new List<string>() },
+            { "ps", new List<string>() },
+            { "st", new List<string>() }
+        };
 
-                string choice = Console.ReadLine();
+        internal static string LogFilePath = "GuidanceHubLogs.txt"; // Changed to 'internal' for accessibility
 
-                switch (choice)
-                {
-                    case "1":
-                        SendMessage("ps", "student");
-                        break;
-                    case "2":
-                        SendMessage("ps", "st");
-                        break;
-                    case "3":
-                        BookMeeting("ps", "student");
-                        break;
-                    case "4":
-                        CheckInbox("ps");
-                        break;
-                    case "5":
-                        return;
-                    default:
-                        Console.WriteLine("Invalid choice. Please try again.");
-                        Pause();
-                        break;
-                }
-            }
-        }
+        public abstract void ShowMenu();
 
-        static void SeniorTutorActions()
-        {
-            while (true)
-            {
-                Console.Clear();
-                Console.WriteLine("Senior Tutor Menu:");
-                Console.WriteLine("1. Send message to Student");
-                Console.WriteLine("2. Send message to PS");
-                Console.WriteLine("3. Check Inbox");
-                Console.WriteLine("4. Log Out");
-                Console.Write("Enter your choice: ");
-
-                string choice = Console.ReadLine();
-
-                switch (choice)
-                {
-                    case "1":
-                        SendMessage("st", "student");
-                        break;
-                    case "2":
-                        SendMessage("st", "ps");
-                        break;
-                    case "3":
-                        CheckInbox("st");
-                        break;
-                    case "4":
-                        return;
-                    default:
-                        Console.WriteLine("Invalid choice. Please try again.");
-                        Pause();
-                        break;
-                }
-            }
-        }
-
-        static void SendMessage(string sender, string recipient)
+        protected void SendMessage(string sender, string recipient)
         {
             Console.Write("Enter your message: ");
             string message = Console.ReadLine();
             string fullMessage = $"Message from {sender.ToUpper()}: {message}";
             inboxes[recipient].Add(fullMessage);
-            LogAction(fullMessage);
+            Utilities.LogAction(fullMessage);
             Console.WriteLine("Message sent successfully.");
-            Pause();
+            ShowMenu();
         }
 
-        static void BookMeeting(string sender, string recipient)
+        protected void BookMeeting(string sender, string recipient)
         {
             Console.Write("Enter meeting date and time (DD/MM/YY - HH:MM): ");
             string dateTime = Console.ReadLine();
             string meetingDetails = $"Meeting request from {sender.ToUpper()} on {dateTime}";
             inboxes[recipient].Add(meetingDetails);
-            LogAction(meetingDetails);
+            Utilities.LogAction(meetingDetails);
             Console.WriteLine("Meeting booked successfully.");
-            Pause();
+            ShowMenu();
         }
 
-        static void CheckInbox(string role)
+        protected void CheckInbox(string role)
         {
             Console.WriteLine("Inbox:");
             if (inboxes[role].Count == 0)
-            {
                 Console.WriteLine("No messages.");
-            }
             else
             {
                 foreach (var message in inboxes[role])
-                {
                     Console.WriteLine($"- {message}");
-                }
             }
-            Pause();
+            ShowMenu();
         }
+    }
 
-        static void LogAction(string action)
+    class Student : User
+    {
+        public override void ShowMenu()
         {
-            File.AppendAllText(logFilePath, $"{DateTime.Now}: {action}{Environment.NewLine}");
+            Console.Clear();
+            Console.WriteLine("Student Menu:");
+            Console.WriteLine("1. Send message to PS");
+            Console.WriteLine("2. Send message to ST");
+            Console.WriteLine("3. Book a meeting with PS");
+            Console.WriteLine("4. Check Inbox");
+            Console.WriteLine("5. Log Out");
+            Console.Write("Enter your choice: ");
+
+            string choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1":
+                    SendMessage("student", "ps");
+                    break;
+                case "2":
+                    SendMessage("student", "st");
+                    break;
+                case "3":
+                    BookMeeting("student", "ps");
+                    break;
+                case "4":
+                    CheckInbox("student");
+                    break;
+                case "5":
+                    return;
+                default:
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    ShowMenu();
+                    break;
+            }
+        }
+    }
+
+    class PersonalSupervisor : User
+    {
+        public override void ShowMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Personal Supervisor Menu:");
+            Console.WriteLine("1. Send message to Student");
+            Console.WriteLine("2. Send message to ST");
+            Console.WriteLine("3. Book a meeting with Student");
+            Console.WriteLine("4. Check Inbox");
+            Console.WriteLine("5. Log Out");
+            Console.Write("Enter your choice: ");
+
+            string choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1":
+                    SendMessage("ps", "student");
+                    break;
+                case "2":
+                    SendMessage("ps", "st");
+                    break;
+                case "3":
+                    BookMeeting("ps", "student");
+                    break;
+                case "4":
+                    CheckInbox("ps");
+                    break;
+                case "5":
+                    return;
+                default:
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    ShowMenu();
+                    break;
+            }
+        }
+    }
+
+    class SeniorTutor : User
+    {
+        public override void ShowMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Senior Tutor Menu:");
+            Console.WriteLine("1. Send message to Student");
+            Console.WriteLine("2. Send message to PS");
+            Console.WriteLine("3. Check Inbox");
+            Console.WriteLine("4. View Student Supervision Status");
+            Console.WriteLine("5. Log Out");
+            Console.Write("Enter your choice: ");
+
+            string choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1":
+                    SendMessage("st", "student");
+                    break;
+                case "2":
+                    SendMessage("st", "ps");
+                    break;
+                case "3":
+                    CheckInbox("st");
+                    break;
+                case "4":
+                    ViewStudentSupervisionStatus();
+                    break;
+                case "5":
+                    return;
+                default:
+                    Console.WriteLine("Invalid choice. Please try again.");
+                    ShowMenu();
+                    break;
+            }
         }
 
-        static string ReadPassword()
+        private void ViewStudentSupervisionStatus()
+        {
+            Console.WriteLine("Student Supervision Status:");
+            DisplayCommunication("student", "ps");
+            DisplayCommunication("ps", "student");
+            ShowMenu();
+        }
+
+        private void DisplayCommunication(string sender, string recipient)
+        {
+            foreach (var message in inboxes[sender])
+            {
+                if (message.Contains($"Message from {sender.ToUpper()}"))
+                    Console.WriteLine($"- {message}");
+            }
+        }
+    }
+
+    static class Utilities
+    {
+        public static string ReadPassword()
         {
             string password = string.Empty;
             ConsoleKey key;
@@ -262,10 +306,9 @@ namespace GuidanceHubApp
             return password;
         }
 
-        static void Pause()
+        public static void LogAction(string action)
         {
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadKey();
+            File.AppendAllText(User.LogFilePath, $"{DateTime.Now}: {action}{Environment.NewLine}");
         }
     }
 }
