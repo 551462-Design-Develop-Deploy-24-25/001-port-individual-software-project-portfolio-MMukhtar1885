@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CEBC023-8354-4BFE-B92E-6EB617C6F95C}|UnitTests\\UnitTests.csproj|c:\\users\\796433\\source\\repos\\551462-design-develop-deploy-24-25\\001-port-individual-software-project-portfolio-mmukhtar1885\\project\\unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CEBC023-8354-4BFE-B92E-6EB617C6F95C}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFE78EE0-4C44-4E40-AF89-434F06701EB3}|Project\\Project.csproj|c:\\users\\796433\\source\\repos\\551462-design-develop-deploy-24-25\\001-port-individual-software-project-portfolio-mmukhtar1885\\project\\project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE78EE0-4C44-4E40-AF89-434F06701EB3}|Project\\Project.csproj|solutionrelative:project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFE78EE0-4C44-4E40-AF89-434F06701EB3}|Project\\Project.csproj|c:\\users\\796433\\source\\repos\\551462-design-develop-deploy-24-25\\001-port-individual-software-project-portfolio-mmukhtar1885\\project\\project\\stakeholders\\seniortutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE78EE0-4C44-4E40-AF89-434F06701EB3}|Project\\Project.csproj|solutionrelative:project\\stakeholders\\seniortutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFE78EE0-4C44-4E40-AF89-434F06701EB3}|Project\\Project.csproj|c:\\users\\796433\\source\\repos\\551462-design-develop-deploy-24-25\\001-port-individual-software-project-portfolio-mmukhtar1885\\project\\project\\stakeholders\\personalsupervisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE78EE0-4C44-4E40-AF89-434F06701EB3}|Project\\Project.csproj|solutionrelative:project\\stakeholders\\personalsupervisor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFE78EE0-4C44-4E40-AF89-434F06701EB3}|Project\\Project.csproj|c:\\users\\796433\\source\\repos\\551462-design-develop-deploy-24-25\\001-port-individual-software-project-portfolio-mmukhtar1885\\project\\project\\stakeholders\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFE78EE0-4C44-4E40-AF89-434F06701EB3}|Project\\Project.csproj|solutionrelative:project\\stakeholders\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\UnitTests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UnitTests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\UnitTests\\UnitTest1.cs*",
+              "RelativeToolTip": "UnitTests\\UnitTest1.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T16:08:31.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SeniorTutor.cs",
+              "DocumentMoniker": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Stakeholders\\SeniorTutor.cs",
+              "RelativeDocumentMoniker": "Project\\Stakeholders\\SeniorTutor.cs",
+              "ToolTip": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Stakeholders\\SeniorTutor.cs",
+              "RelativeToolTip": "Project\\Stakeholders\\SeniorTutor.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T15:55:33.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonalSupervisor.cs",
+              "DocumentMoniker": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Stakeholders\\PersonalSupervisor.cs",
+              "RelativeDocumentMoniker": "Project\\Stakeholders\\PersonalSupervisor.cs",
+              "ToolTip": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Stakeholders\\PersonalSupervisor.cs",
+              "RelativeToolTip": "Project\\Stakeholders\\PersonalSupervisor.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T15:54:40.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Stakeholders\\Student.cs",
+              "RelativeDocumentMoniker": "Project\\Stakeholders\\Student.cs",
+              "ToolTip": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Stakeholders\\Student.cs",
+              "RelativeToolTip": "Project\\Stakeholders\\Student.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T15:53:48.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Program.cs",
+              "RelativeDocumentMoniker": "Project\\Program.cs",
+              "ToolTip": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Program.cs",
+              "RelativeToolTip": "Project\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T15:47:50.262Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
