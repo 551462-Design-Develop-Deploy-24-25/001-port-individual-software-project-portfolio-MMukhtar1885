@@ -17,9 +17,9 @@ namespace GuidanceHubApp
 
    class GuidanceHubApp
    {
-       private Authenticator authenticator;
-       private Dictionary<string, List<string>> inboxes;
-       private string logFilePath = "GuidanceHubLogs.txt";
+       public Authenticator authenticator;
+       public Dictionary<string, List<string>> inboxes;
+       public string logFilePath = "GuidanceHubLogs.txt";
 
 
        public GuidanceHubApp()
@@ -121,13 +121,13 @@ namespace GuidanceHubApp
    }
 
 
-   abstract class User
+   public abstract class User
    {
-       protected Dictionary<string, List<string>> Inboxes;
-       protected string LogFilePath;
+       public Dictionary<string, List<string>> Inboxes;
+       public string LogFilePath;
 
 
-       protected User(Dictionary<string, List<string>> inboxes, string logFilePath)
+       public User(Dictionary<string, List<string>> inboxes, string logFilePath)
        {
            Inboxes = inboxes;
            LogFilePath = logFilePath;
@@ -137,7 +137,7 @@ namespace GuidanceHubApp
        public abstract void DisplayMenu();
 
 
-       protected void SendMessage(string sender, string recipient)
+       public void SendMessage(string sender, string recipient)
        {
            Console.Write("Enter your message: ");
            string message = Console.ReadLine();
@@ -149,7 +149,7 @@ namespace GuidanceHubApp
        }
 
 
-       protected void BookMeeting(string sender, string recipient)
+       public void BookMeeting(string sender, string recipient)
        {
            Console.Write("Enter meeting date and time (DD/MM/YY - HH:MM): ");
            string dateTime = Console.ReadLine();
@@ -161,7 +161,7 @@ namespace GuidanceHubApp
        }
 
 
-       protected void CheckInbox(string role)
+       public void CheckInbox(string role)
        {
            Console.WriteLine("Inbox:");
            if (Inboxes[role].Count == 0)
@@ -179,14 +179,14 @@ namespace GuidanceHubApp
        }
 
 
-       protected void LogAction(string action)
+       public void LogAction(string action)
        {
            File.AppendAllText(LogFilePath, $"{DateTime.Now}: {action}{Environment.NewLine}");
        }
    }
 
 
-   class Student : User
+   public class Student : User
    {
        public Student(Dictionary<string, List<string>> inboxes, string logFilePath)
            : base(inboxes, logFilePath) { }
@@ -235,7 +235,7 @@ namespace GuidanceHubApp
    }
 
 
-   class PersonalSupervisor : User
+   public class PersonalSupervisor : User
    {
        public PersonalSupervisor(Dictionary<string, List<string>> inboxes, string logFilePath)
            : base(inboxes, logFilePath) { }
@@ -284,7 +284,7 @@ namespace GuidanceHubApp
    }
 
 
-   class SeniorTutor : User
+  public class SeniorTutor : User
    {
        public SeniorTutor(Dictionary<string, List<string>> inboxes, string logFilePath)
            : base(inboxes, logFilePath) { }
@@ -332,7 +332,7 @@ namespace GuidanceHubApp
        }
 
 
-       private void ViewSupervisionStatus()
+       public void ViewSupervisionStatus()
        {
            Console.WriteLine("Student Supervision Status:");
            foreach (var message in Inboxes["student"])
@@ -348,7 +348,7 @@ namespace GuidanceHubApp
    }
 
 
-   static class Utilities
+   public static class Utilities
    {
        public static string ReadPassword()
        {
