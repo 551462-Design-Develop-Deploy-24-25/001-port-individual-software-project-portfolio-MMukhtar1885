@@ -1019,11 +1019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\796433\\Source\\Repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\UnitTests\\UnitTests.csproj",
+      "projectPath": "C:\\Users\\796433\\Source\\Repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\UnitTests\\UnitTests.csproj",
       "packagesPath": "C:\\Users\\796433\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\796433\\Source\\Repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1045,8 +1045,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Project.csproj": {
-              "projectPath": "C:\\Users\\796433\\source\\repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Project.csproj"
+            "C:\\Users\\796433\\Source\\Repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Project.csproj": {
+              "projectPath": "C:\\Users\\796433\\Source\\Repos\\551462-Design-Develop-Deploy-24-25\\001-port-individual-software-project-portfolio-MMukhtar1885\\Project\\Project\\Project.csproj"
             }
           }
         }

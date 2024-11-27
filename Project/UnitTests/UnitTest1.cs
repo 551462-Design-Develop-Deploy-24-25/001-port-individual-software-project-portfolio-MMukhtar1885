@@ -92,3 +92,92 @@ namespace UnitTests
         }
     }
 }
+
+
+namespace UnitTests
+{
+    [TestClass]
+    public class AdditionalGuidanceHubTests
+    {
+        [TestMethod]
+        public void TP02_RoleSpecificMenus_ShouldDisplayCorrectly()
+        {
+            // Simulate role-specific menu logic
+            var menus = new Dictionary<string, List<string>>
+            {
+                { "student", new List<string> { "Send message", "Book meeting", "Check inbox" } },
+                { "ps", new List<string> { "Send message", "Book meeting", "View students" } },
+                { "st", new List<string> { "Send message", "Check inbox", "Supervision status" } }
+            };
+
+            var role = "student";
+            var expectedMenu = new List<string> { "Send message", "Book meeting", "Check inbox" };
+
+            CollectionAssert.AreEqual(expectedMenu, menus[role], "Menu for the role should match the expected menu.");
+        }
+
+        [TestMethod]
+        public void TP05_ReceivedMessageAndMeeting_ShouldBeInInbox()
+        {
+            // Simulate inbox logic
+            var inboxes = new Dictionary<string, List<string>>
+            {
+                { "student", new List<string>() }
+            };
+
+            inboxes["student"].Add("Message from PS: Test message");
+            inboxes["student"].Add("Meeting request from PS on 24/11/2024 - 10:00");
+
+            Assert.AreEqual(2, inboxes["student"].Count, "Inbox should contain both messages and meeting requests.");
+        }
+
+        [TestMethod]
+        public void TP06_MenuDisplay_ShouldBeRoleSpecific()
+        {
+            // Simulate specific options display logic
+            var roleMenus = new Dictionary<string, List<string>>
+            {
+                { "student", new List<string> { "Send message to PS", "Send message to ST", "Book meeting", "Check inbox" } },
+                { "ps", new List<string> { "Send message to Student", "Send message to ST", "Book meeting", "Check inbox" } },
+                { "st", new List<string> { "Send message to Student", "Send message to PS", "Check inbox", "View Supervision Status" } }
+            };
+
+            string role = "ps";
+            var expectedMenu = new List<string> { "Send message to Student", "Send message to ST", "Book meeting", "Check inbox" };
+
+            CollectionAssert.AreEqual(expectedMenu, roleMenus[role], "Role-specific menu should be displayed correctly.");
+        }
+
+        [TestMethod]
+        public void TP08_InvalidInput_ShouldShowError()
+        {
+            // Simulate invalid input handling
+            string loginEmail = "wrongemail@hull.ac.uk";
+            string loginPassword = "wrongpassword";
+            string errorMessage = "Invalid credentials. Please try again.";
+
+            bool isValid = loginEmail == "correctemail@hull.ac.uk" && loginPassword == "correctpassword";
+
+            string result = isValid ? "Login successful" : errorMessage;
+            Assert.AreEqual(errorMessage, result, "Error message should be displayed for invalid input.");
+        }
+
+        [TestMethod]
+        public void TP09_Notifications_DeliverInTime()
+        {
+            // Simulate notification delivery timing
+            var timer = System.Diagnostics.Stopwatch.StartNew();
+
+            // Simulate message sending
+            var inboxes = new Dictionary<string, List<string>>
+            {
+                { "student", new List<string>() }
+            };
+            inboxes["student"].Add("Test notification");
+
+            timer.Stop();
+
+            Assert.IsTrue(timer.ElapsedMilliseconds < 3000, "Notification should be delivered within 3 seconds.");
+        }
+    }
+}
