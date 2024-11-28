@@ -90,15 +90,7 @@ namespace UnitTests
 
             Assert.AreEqual("********", maskedPassword, "Password should be masked correctly.");
         }
-    }
-}
 
-
-namespace UnitTests
-{
-    [TestClass]
-    public class AdditionalGuidanceHubTests
-    {
         [TestMethod]
         public void TP02_RoleSpecificMenus_ShouldDisplayCorrectly()
         {
