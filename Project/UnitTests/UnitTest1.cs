@@ -8,9 +8,8 @@ namespace UnitTests
     public class GuidanceHubTests
     {
         [TestMethod]
-        public void TP01_ValidLogin_ShouldSucceed()
+        public void TP01ValidCredentialsLogin()
         {
-            // Simulate valid login logic
             string correctEmail = "m.o.mukhtar-2022@hull.ac.uk";
             string correctPassword = "Password";
             string inputEmail = "m.o.mukhtar-2022@hull.ac.uk";
@@ -21,7 +20,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TP01_InvalidLogin_ShouldFail()
+        public void TP01InvalidCredentialsLogin()
         {
             // Simulate invalid login logic
             string correctEmail = "m.o.mukhtar-2022@hull.ac.uk";
@@ -34,7 +33,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TP03_SendMessage_ShouldLogCorrectly()
+        public void TP03SendMessage()
         {
             // Simulate sending a message
             var inboxes = new Dictionary<string, List<string>>
@@ -52,7 +51,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TP04_BookMeeting_ValidFormat_ShouldSucceed()
+        public void TP04BookMeeting()
         {
             // Simulate booking a meeting
             var inboxes = new Dictionary<string, List<string>>
@@ -69,7 +68,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TP07_Actions_ShouldLogToTxtFile()
+        public void TP06SaveActionsTXTfile()
         {
             string logFilePath = "TestLog.txt";
             if (File.Exists(logFilePath)) File.Delete(logFilePath);
@@ -82,7 +81,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TP10_PasswordMasking_ShouldReplaceCharacters()
+        public void TP09PasswordMasking()
         {
             // Simulate password masking
             string inputPassword = "Password";
@@ -92,7 +91,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TP02_RoleSpecificMenus_ShouldDisplayCorrectly()
+        public void TP02DisplayCorrectMenu()
         {
             // Simulate role-specific menu logic
             var menus = new Dictionary<string, List<string>>
@@ -109,7 +108,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TP05_ReceivedMessageAndMeeting_ShouldBeInInbox()
+        public void TP05RecieveInInbox()
         {
             // Simulate inbox logic
             var inboxes = new Dictionary<string, List<string>>
@@ -123,25 +122,9 @@ namespace UnitTests
             Assert.AreEqual(2, inboxes["student"].Count, "Inbox should contain both messages and meeting requests.");
         }
 
-        [TestMethod]
-        public void TP06_MenuDisplay_ShouldBeRoleSpecific()
-        {
-            // Simulate specific options display logic
-            var roleMenus = new Dictionary<string, List<string>>
-            {
-                { "student", new List<string> { "Send message to PS", "Send message to ST", "Book meeting", "Check inbox" } },
-                { "ps", new List<string> { "Send message to Student", "Send message to ST", "Book meeting", "Check inbox" } },
-                { "st", new List<string> { "Send message to Student", "Send message to PS", "Check inbox", "View Supervision Status" } }
-            };
-
-            string role = "ps";
-            var expectedMenu = new List<string> { "Send message to Student", "Send message to ST", "Book meeting", "Check inbox" };
-
-            CollectionAssert.AreEqual(expectedMenu, roleMenus[role], "Role-specific menu should be displayed correctly.");
-        }
 
         [TestMethod]
-        public void TP08_InvalidInput_ShouldShowError()
+        public void TP07UserFriendlyErrorMessage()
         {
             // Simulate invalid input handling
             string loginEmail = "wrongemail@hull.ac.uk";
@@ -155,7 +138,7 @@ namespace UnitTests
         }
 
         [TestMethod]
-        public void TP09_Notifications_DeliverInTime()
+        public void TP08InboxNotificationTime()
         {
             // Simulate notification delivery timing
             var timer = System.Diagnostics.Stopwatch.StartNew();
