@@ -1,0 +1,43 @@
+name: CI Workflow for Program and Unit Tests
+
+on:
+  push:
+    branches:
+      - main   # Trigger workflow on push to the 'main' branch
+  pull_request:
+    branches:
+      - main   # Trigger workflow on pull requests to 'main'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Setup .NET environment
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0 # Targeting .NET 8.0 as specified
+
+    # Step 3: Restore dependencies
+    - name: Restore dependencies
+      run: dotnet restore Project/Project.sln
+
+    # Step 4: Build the program
+    - name: Build program
+      run: dotnet build Project/Project.sln --no-restore
+
+    # Step 5: Run unit tests
+    - name: Run Unit Tests
+      run: dotnet test Project/UnitTests/UnitTests.csproj --no-build --logger "trx;LogFileName=test_results.trx"
+
+    # Step 6: Publish test results as an artifact
+    - name: Publish Test Results
+      uses: actions/upload-artifact@v3
+      with:
+        name: TestResults
+        path: '**/*.trx'
