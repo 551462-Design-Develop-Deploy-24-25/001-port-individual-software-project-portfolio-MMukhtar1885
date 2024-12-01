@@ -1,9 +1,18 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.6">
   <diagram name="Page-1" id="2WJPUagvzhyku301FSlA">
-    <mxGraphModel>
+    <mxGraphModel dx="1194" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4BaX-DOjSvyzQGhd1v_b-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="4BaX-DOjSvyzQGhd1v_b-3" target="4BaX-DOjSvyzQGhd1v_b-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4BaX-DOjSvyzQGhd1v_b-3" value="" style="ellipse;html=1;shape=startState;fillColor=#FF3333;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4BaX-DOjSvyzQGhd1v_b-6" value="Role Selection&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FF3333;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="290" y="35" width="125" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
