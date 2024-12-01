@@ -36,9 +36,9 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kcwCu-PbDwrAhVlw852H-80" value="Login to ST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="kcwCu-PbDwrAhVlw852H-34" vertex="1" connectable="0">
-          <mxGeometry x="0.3818" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="zp_hh6rIXvq5JmuqpKk7-2" value="Log in to ST" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kcwCu-PbDwrAhVlw852H-34">
+          <mxGeometry x="0.5361" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="kcwCu-PbDwrAhVlw852H-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="kcwCu-PbDwrAhVlw852H-22" target="kcwCu-PbDwrAhVlw852H-35" edge="1">
@@ -47,6 +47,11 @@
               <mxPoint x="460" y="90" />
               <mxPoint x="460" y="65" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zp_hh6rIXvq5JmuqpKk7-5" value="Choose Exit" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kcwCu-PbDwrAhVlw852H-36">
+          <mxGeometry x="0.1549" y="1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="kcwCu-PbDwrAhVlw852H-22" value="Role Selection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#ff0000;" parent="1" vertex="1">
@@ -167,6 +172,11 @@
         <mxCell id="kcwCu-PbDwrAhVlw852H-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="kcwCu-PbDwrAhVlw852H-90" target="kcwCu-PbDwrAhVlw852H-98" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="368" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zp_hh6rIXvq5JmuqpKk7-6" value="Choose Exit" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="kcwCu-PbDwrAhVlw852H-96">
+          <mxGeometry x="-0.24" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="kcwCu-PbDwrAhVlw852H-90" value="Role Selection" style="whiteSpace=wrap;html=1;strokeColor=#FF3333;fontStyle=1;rounded=1;arcSize=22;" parent="1" vertex="1">
